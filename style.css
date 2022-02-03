@@ -4,15 +4,15 @@ color: white;
 }
 
 p#yellowParagraph {
-    color: yellow;
+    color: greenyellow;
     font-family: "Comic Sans MS";
-    font-size: 18px;
+    font-size: 10px;
   }
 
 h1{
-color:blueviolet; 
-font-size: 64px; 
-background-color:brown; 
+color:green; 
+font-size: 30px; 
+background-color:aliceblue; 
 margin: 0; 
 padding: 10px; 
 text-align: center;
