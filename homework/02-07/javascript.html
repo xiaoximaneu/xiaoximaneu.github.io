@@ -3,25 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <title>JavaScript Experiment</title>
+    <script src="math.js"></script>
   </head>
   <body>
-   <h1> JavaScript homework page</h1>
+   <h1> JavaScript Experiment Page</h1>
 
    <h2>Xiaoxi Ma, 02/12/2022</h2>
    
    
-   <p id="demo"> - 1st Experiment: JavaScript can change HTML content.</p>
+   <p id="first"> - No.1 Experiment: JavaScript can change HTML content.</p>
 
-   <button type="button" 
-    onclick='document.getElementById("demo").innerHTML = "Hello Class!" '>Click here!</button>
+   <button type="button" onclick="myFunction()">Click here!</button>
 
-    <p> - 2nd Experiment: TURN ON THE LIGHT</p>
-    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-    <img id="myImage" src="pic_bulboff.gif"
-    style="width:100px">
-    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+   
 
+ 
 
+    <script>
+      function myFunction(){
+        document.getElementById("first").innerHTML = "Hello Class!";
+
+      }
+      window.alert("Weclome to this page!:)");
+      
+
+    </script>
 
   </body>
 </html>
