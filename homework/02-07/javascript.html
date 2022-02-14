@@ -5,15 +5,18 @@
     <title>JavaScript Experiment</title>
     <script src="math.js"></script>
   </head>
-  <body>
-   <h1> JavaScript Experiment Page</h1>
+  <body style=background-color:#90EE90>
+   <h1 style="text-align:center"> JavaScript Experiment Page</h1>
 
-   <h2>Xiaoxi Ma, 02/12/2022</h2>
+   <h2 style="text-align:center">Xiaoxi Ma, 02/12/2022</h2>
    
    
    <p id="first"> - No.1 Experiment: JavaScript can change HTML content.</p>
-
    <button type="button" onclick="myFunction()">Click here!</button>
+   <p> - No.2 Experiment: make a sentence disappear.</p>
+   <p id="second">Let's play with this line. </p>
+   <input type="button" value="Hide it" onclick="document.getElementById('second').style.visibility='hidden'">
+   <input type="button" value="Show it" onclick="document.getElementById('second').style.visibility='visible'">
 
    
 
@@ -24,7 +27,7 @@
         document.getElementById("first").innerHTML = "Hello Class!";
 
       }
-      window.alert("Weclome to this page!:)");
+      
       
 
     </script>

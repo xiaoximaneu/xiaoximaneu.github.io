@@ -1,0 +1,1 @@
+window.alert("Weclome to this page!:)");
