@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      function bgChange(bg){
+        document.body.style.background=bg;
+      }
+    </script>
     <meta charset="utf-8" />
     <title>JavaScript Experiment</title>
     <script src="math.js"></script>
@@ -17,7 +22,24 @@
    <p id="second">Let's play with this line. </p>
    <input type="button" value="Hide it" onclick="document.getElementById('second').style.visibility='hidden'">
    <input type="button" value="Show it" onclick="document.getElementById('second').style.visibility='visible'">
-
+   <p> - No.3 Experiment: try to change the background color by using your mouse.</p>
+   
+   <table style="width:300px;height:100px">
+    <tr>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:Khaki">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:PaleGreen">
+      </td>
+      <td onmouseover="bgChange(this.style.backgroundColor)" 
+      onmouseout="bgChange('transparent')"
+      style="background-color:Silver">
+      </td>
+    </tr>
+  </table>
    
 
  
@@ -28,7 +50,7 @@
 
       }
       
-      
+      window.alert("Weclome to this page!:)");
 
     </script>
 
