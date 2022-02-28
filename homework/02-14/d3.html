@@ -1,23 +1,126 @@
 <!DOCTYPE html>
 <html>
-  <head>
+ 
+<head>
     <meta charset="utf-8" />
-    <title>D3 Basics</title>
+    <title>D3 EXPERIMENT</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      .headline {
+        font-size: 60px;
+        font-family: 'Times New Roman', Times, serif;
+        color: steelblue;
+        text-align: center;
+      }
 
+      .small {
+        font-family: 'Times New Roman', Times, serif;
+        color: steelblue;
+        text-align: center;
+      }
+    </style>
   </head>
+  
   <body>
-   <h1 id="title">Welcome!</h1>
+    <h1 id="title">SVG SQUARES - ENTER/UPDATE/EXIT</h1>
+    <p></p>
+    <svg id="rectCanvas" height="1000px" width="1000px"></svg> 
 
-   <svg id="circleCanvas">
-  </svg>
+     <script>
+       //headline
+       d3.select("#title")
+         .attr("class","headline")
+       //add a paragraph 
+       d3.select("p").text("Xiaoxi Ma, 2022/02/27")
+         .attr("class","small");
+        // Data
+        var data2021 = [
+            {
+                country: "fra",
+                value: 20
+            },
+            {
+                country: "fin",
+                value: 70
+            },
+            {
+                country: "deu",
+                value: 50
+            }
+        ];
 
-   <script>
-       
+        var data2018 = [
+            {
+                country: "fra",
+                value: 130
+            },
+            {
+                country: "deu",
+                value: 40
+            },
+        ];
+        var data2015 = [
+            {
+                country: "fra",
+                value: 60
+            },
+            {
+                country: "fin",
+                value: 100
+            },
+            {
+                country: "deu",
+                value: 90
+            }
+        ];
 
+        function drawRect(dataArray) {
+            
+            var rect = d3.select("#rectCanvas")
+            .selectAll("rect")
+            .data(dataArray, function(currentDataPoint) {
+                console.log(currentDataPoint.country);
+                return currentDataPoint.country;
+            });
+            
+            rect
+                .transition()
+                .duration(1000)
+                .attr("x", function(d){
+                    return d.value * 5;
+                })
+                .attr("height", function(d){
+                    return d.value;
+                })
+                .attr("width", function(d){
+                    return d.value;
+                })
+                .attr("fill", "black")
+                ;
 
+            rect.enter().append("rect")
+                .attr("class", "myRect")
+                .attr("x", function(d){
+                    return d.value * 10;
+                })
+                .attr("height", function(d){
+                    return d.value;
+                })
+                .attr("width", function(d){
+                    return d.value;
+                })
+                .attr("fill","blue")
+                .transition()
+                .duration(1000)
 
-       
-   </script>
-  </body>
+            rect.exit()
+            .transition().duration(1000)
+            .attr("height", 0)
+            .attr("fill","green")
+            .remove();
+        }
+        drawRect(data2021);
+
+    </script>
+    </body>
 </html>
