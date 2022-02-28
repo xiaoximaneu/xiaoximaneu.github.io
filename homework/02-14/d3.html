@@ -25,7 +25,7 @@
     <h1 id="title">SVG SQUARES - ENTER/UPDATE/EXIT</h1>
     <p></p>
     <h2></h2>
-    <svg id="rectCanvas" height="1000px" width="1000px"></svg> 
+    <svg id="rectCanvas" height="300px" width="1000px"></svg> 
 
      <script>
        //headline
@@ -94,6 +94,7 @@
             rect
                 .transition()
                 .duration(2000)
+                .delay(1000)
                 .attr("height", function(d){
                     return d.value * 3;
                 })
@@ -128,6 +129,46 @@
         }
 
         drawRect(data2020);
+
+        //add a paragraph in the end
+        d3.select("body").append("p").text("Here's another experiment. I think this code is cool so just copied and pasted here HAHA.")
+          .attr("class","small")
+          .style("color", "steelblue")
+          var svg = d3.select("body")
+        .append("svg")
+        .attr("width", 500)
+        .attr("height", 500);
+
+
+    var bar1 = svg.append("rect")
+        .attr("fill", "steelblue")
+        .attr("x", 380)
+        .attr("y", 20)
+        .attr("height", 20)
+        .attr("width", 10)
+        .attr("class", "small")
+
+    var bar2 = svg.append("rect")
+        .attr("fill", "steelblue")
+        .attr("x", 420)
+        .attr("y", 20)
+        .attr("height", 20)
+        .attr("width", 10)
+
+    update();
+
+function update() {
+    bar1.transition()
+        .ease(d3.easeLinear)
+        .duration(2000)
+        .attr("height",100)
+
+    bar2.transition()
+        .ease(d3.easeLinear)
+        .duration(2000)
+        .delay(2000)
+        .attr("height",100)
+}
 
     </script>
     </body>
