@@ -31,13 +31,16 @@
        //headline
        d3.select("#title")
          .attr("class","headline")
+
        //add a paragraph 
        d3.select("p").text("Xiaoxi Ma, 2022/02/27")
          .attr("class","small");
+
       //add h2
       d3.select("h2")
-        .text("Overall Best Countries Ranking - quality of life - not real data")
+        .text("Best Countries Ranking - quality of life - not real data")
         .attr("class", "small");
+
         // Data
         var data2020 = [
             {
@@ -78,9 +81,6 @@
             }
         ];
 
-  
-     
-
         function drawRect(dataArray) {
             
             var rect = d3.select("#rectCanvas")
@@ -89,21 +89,20 @@
                 console.log(currentDataPoint.country);
                 return currentDataPoint.country;
             });
+
             //update
             rect
                 .transition()
                 .duration(2000)
-                .attr("x", function(d){
-                    return d.value * 8;
-                })
                 .attr("height", function(d){
-                    return d.value * 2;
+                    return d.value * 3;
                 })
                 .attr("width", function(d){
                     return d.value;
                 })
                 .attr("fill", "steelblue")
                 ;
+
             //enter
             rect.enter().append("rect")
                 .attr("class", "myRect")
@@ -119,6 +118,7 @@
                 .attr("fill","steelblue")
                 .transition()
                 .duration(1000)
+
             //exit
             rect.exit()
             .transition().duration(1000)
@@ -126,6 +126,7 @@
             .attr("fill","orange")
             .remove();
         }
+
         drawRect(data2020);
 
     </script>
