@@ -24,6 +24,7 @@
   <body>
     <h1 id="title">SVG SQUARES - ENTER/UPDATE/EXIT</h1>
     <p></p>
+    <h2></h2>
     <svg id="rectCanvas" height="1000px" width="1000px"></svg> 
 
      <script>
@@ -33,46 +34,52 @@
        //add a paragraph 
        d3.select("p").text("Xiaoxi Ma, 2022/02/27")
          .attr("class","small");
+      //add h2
+      d3.select("h2")
+        .text("Overall Best Countries Ranking - quality of life - not real data")
+        .attr("class", "small");
         // Data
-        var data2021 = [
+        var data2020 = [
             {
-                country: "fra",
+                country: "usa",
+                value: 80
+            },
+            {
+                country: "can",
+                value: 30
+            },
+            {
+                country: "dnk",
                 value: 20
-            },
-            {
-                country: "fin",
-                value: 70
-            },
-            {
-                country: "deu",
-                value: 50
             }
         ];
-
         var data2018 = [
             {
-                country: "fra",
-                value: 130
+                country: "usa",
+                value: 90
             },
             {
-                country: "deu",
+                country: "dnk",
                 value: 40
-            },
+            }
         ];
-        var data2015 = [
+        var data2016 = [
             {
-                country: "fra",
-                value: 60
-            },
-            {
-                country: "fin",
+                country: "usa",
                 value: 100
             },
             {
-                country: "deu",
-                value: 90
+                country: "can",
+                value: 50
+            },
+            {
+                country: "dnk",
+                value: 30
             }
         ];
+
+  
+     
 
         function drawRect(dataArray) {
             
@@ -82,7 +89,7 @@
                 console.log(currentDataPoint.country);
                 return currentDataPoint.country;
             });
-            
+            //update
             rect
                 .transition()
                 .duration(1000)
@@ -97,7 +104,7 @@
                 })
                 .attr("fill", "black")
                 ;
-
+            //enter
             rect.enter().append("rect")
                 .attr("class", "myRect")
                 .attr("x", function(d){
@@ -112,14 +119,14 @@
                 .attr("fill","blue")
                 .transition()
                 .duration(1000)
-
+            //exit
             rect.exit()
             .transition().duration(1000)
             .attr("height", 0)
             .attr("fill","green")
             .remove();
         }
-        drawRect(data2021);
+        drawRect(data2020);
 
     </script>
     </body>
