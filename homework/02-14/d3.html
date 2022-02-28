@@ -92,17 +92,17 @@
             //update
             rect
                 .transition()
-                .duration(1000)
+                .duration(2000)
                 .attr("x", function(d){
-                    return d.value * 5;
+                    return d.value * 8;
                 })
                 .attr("height", function(d){
-                    return d.value;
+                    return d.value * 2;
                 })
                 .attr("width", function(d){
                     return d.value;
                 })
-                .attr("fill", "black")
+                .attr("fill", "steelblue")
                 ;
             //enter
             rect.enter().append("rect")
@@ -116,14 +116,14 @@
                 .attr("width", function(d){
                     return d.value;
                 })
-                .attr("fill","blue")
+                .attr("fill","steelblue")
                 .transition()
                 .duration(1000)
             //exit
             rect.exit()
             .transition().duration(1000)
             .attr("height", 0)
-            .attr("fill","green")
+            .attr("fill","orange")
             .remove();
         }
         drawRect(data2020);
