@@ -3,11 +3,29 @@ body {
     text-align: center;
   }
 
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color:azure;
+  }
+
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color:azure;
+  }
+
+
   table, th, td {
-    border: 1px solid;
+    border: 1px solid grey;
   }
 
   table.center {
-    margin-left:auto; 
-    margin-right:auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:black;
+    margin-left: 200px; 
+    margin-right: 200px;
+    padding:10px;
   }
+
