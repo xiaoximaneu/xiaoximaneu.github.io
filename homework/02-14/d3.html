@@ -44,39 +44,39 @@
         // Data
         var data2020 = [
             {
-                country: "usa",
+                city: "usa",
                 value: 80
             },
             {
-                country: "can",
+                city: "can",
                 value: 30
             },
             {
-                country: "dnk",
+                city: "dnk",
                 value: 20
             }
         ];
         var data2018 = [
             {
-                country: "usa",
+                city: "usa",
                 value: 90
             },
             {
-                country: "dnk",
+                city: "dnk",
                 value: 40
             }
         ];
         var data2016 = [
             {
-                country: "usa",
+                city: "usa",
                 value: 100
             },
             {
-                country: "can",
+                city: "can",
                 value: 50
             },
             {
-                country: "dnk",
+                city: "dnk",
                 value: 30
             }
         ];
@@ -86,8 +86,8 @@
             var rect = d3.select("#rectCanvas")
             .selectAll("rect")
             .data(dataArray, function(currentDataPoint) {
-                console.log(currentDataPoint.country);
-                return currentDataPoint.country;
+                console.log(currentDataPoint.city);
+                return currentDataPoint.city;
             });
 
             //update
