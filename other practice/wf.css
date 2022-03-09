@@ -3,6 +3,7 @@
   div.a {
     text-indent: 50px;
     margin: 2px 300px 2px 300px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
   h1{
@@ -20,9 +21,9 @@
         margin-right: auto;
       }
  h4{
-     font-size:22px;
+     font-size:20px;
  }
   
  p{
-     font-size: 20px;
+     font-size: 18px;
  }
