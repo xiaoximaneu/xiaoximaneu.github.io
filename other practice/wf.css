@@ -9,6 +9,11 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
+  div.sticky {
+    position: sticky;
+    top: 0;
+  }
+
   .fa {
     padding: 5px;
     font-size: 15px;
