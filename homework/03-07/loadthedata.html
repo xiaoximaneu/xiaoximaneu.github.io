@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Load the data</title>
+    <link rel="stylesheet" href="loadthedata.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+      <h1>-- Load the Data -- </h1>
+     
+    <a href="/index.html">back to Home</a>
+              
+    <script>
+        d3.csv("top_women_chess_players_aug_2020.csv")
+        .then(function(femaleplayerdata){
+            console.log(femaleplayerdata)
+        });
+ 
+    </script>
+
+  </body>
+</html>
