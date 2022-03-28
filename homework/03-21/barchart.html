@@ -8,9 +8,154 @@
   </head>
   <body>
     <h1>Experiment with the bar visualization</h1>
-  
+    <svg id="barchart">
+      <g id="shapes"></g>
+      <g id="x"></g>
+      <g id="y"></g>
+    </svg>
 
     <script>
+     //fetch data from a url, print every 3 sec, and shown maximun of 9 bars
+      var url = "https://whiteboard.datawheel.us/api/google-analytics/realtime/random";
+      var frequency = 3 * 1000; // three seconds
+      var dataMax = 7;
+      var data = [];
+
+     // draw this bar chart's dimensions
+      var width = window.innerWidth; //fit to the window
+      var height = window.innerHeight;
+      var margin = {
+        top: 30,
+        right: 300,
+        bottom: 250,
+        left: 300
+      };
+      var chartWidth = width - margin.left - margin.right;
+      var chartHeight = height - margin.top - margin.bottom;
+
+     // use the above to set the svg 
+      var svg = d3.select("#barchart")
+        .attr("width", width)
+        .attr("height", height);
+
+    
+        
+
+
+      var domainValues = d3.range(1, dataMax + 1);
+      
+
+      // x, domain = input, range = output
+      var x = d3.scaleBand()
+        .domain(domainValues.reverse())
+        .range([margin.left, margin.left + chartWidth])
+        .paddingInner(0.3)
+        .paddingOuter(0.1);
+
+      var barWidth = x.bandwidth();
+
+      function fetchData() {
+
+        d3.json(url)
+          .then(function(users) {
+
+            data.unshift({
+              users: users,
+              timestamp: new Date()
+            });
+
+            if (data.length > dataMax) data.pop();
+
+            var maxUsers = d3.max(data, function(d) {
+              return d.users;
+            });
+
+            var barHeight = d3.scaleLinear()
+              .domain([0, maxUsers])
+              .range([0, chartHeight]);
+
+            var y = d3.scaleLinear()
+              .domain([0, maxUsers])
+              .range([margin.top + chartHeight, margin.top]);
+
+            var yAxis = d3.axisLeft(y)
+            .tickFormat(function (d){
+               return d + "%";
+            });
+
+            svg.select("#y")
+              .attr("transform", "translate(" + margin.left + ", 0)")
+              .transition().duration(frequency / 2)
+              .call(yAxis);
+
+            var xAxis = d3.axisBottom(x)
+            .tickFormat((d, i) => ['Earliest', '•', '•', '•', '•', "•", 'Latest'][i]);
+
+            svg.select("#x")
+              .attr("transform", "translate(0, " + (chartHeight + margin.top) + ")")
+              .transition().duration(frequency / 2)
+              .call(xAxis);
+
+            function zeroState(selection) {
+              selection
+                .attr("height", 0)
+                .attr("y", y(0));
+            }
+
+            function barPosition(selection) {
+              selection
+                .attr("height", function(d) {
+                  return barHeight(d.users);
+                })
+                .attr("y", function(d) {
+                  return y(d.users);
+                });
+            }
+
+            // Data Binding
+            var bars = svg.select("#shapes").selectAll(".bar")
+              .data(data, function(d) {
+                return d.timestamp;
+              });
+
+            // Entering Bars
+            bars.enter().append("rect")
+              .attr("class", "bar")
+              .attr("width", barWidth)
+              .attr("x", function(d, i) {
+                return x(i + 1);
+              })
+              .attr("fill", "white")
+              .call(zeroState)
+              .transition().duration(frequency / 2)
+                .call(barPosition);
+               
+
+            // Updating Bars
+            bars
+              .transition().duration(frequency / 2)
+              .attr("x", function(d, i) {
+                return x(i + 1);
+              })
+              .attr("fill", "white")
+              .style("stroke", "black")
+              .call(barPosition);
+
+            // Exiting Bars
+            bars.exit()
+              .transition().duration(frequency / 2)
+              .call(zeroState)
+              .attr("fill", "grey")
+              .style("opacity", 0.4)
+              .remove();
+
+          });
+
+      }
+
+      fetchData();
+      setInterval(fetchData, frequency);
+
 
     </script>
   </body>
