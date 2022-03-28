@@ -1,0 +1,30 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+    margin-right: 200px;
+  }
+
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color:azure;
+    text-align: right;
+    
+  }
+
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color:azure;
+    text-align: right;
+    margin-top: 100px;
+  }
+
+  .right{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:azure;
+    text-align: right;
+    
+  }
+
