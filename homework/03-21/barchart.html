@@ -86,15 +86,21 @@
             svg.select("#y")
               .attr("transform", "translate(" + margin.left + ", 0)")
               .transition().duration(frequency / 2)
-              .call(yAxis);
+              .call(yAxis)
+              .style("font-size", "14px")
+              .style("font-family", "Times New Roman");
 
             var xAxis = d3.axisBottom(x)
             .tickFormat((d, i) => ['Earliest', '•', '•', '•', '•', "•", 'Latest'][i]);
 
+  
+
             svg.select("#x")
               .attr("transform", "translate(0, " + (chartHeight + margin.top) + ")")
               .transition().duration(frequency / 2)
-              .call(xAxis);
+              .call(xAxis)
+              .style("font-size", "14px")
+              .style("font-family", "Times New Roman");
 
             function zeroState(selection) {
               selection
