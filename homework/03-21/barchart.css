@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color:azure;
+    text-align: center;
+  }
