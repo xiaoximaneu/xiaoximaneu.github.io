@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#banner {
+    text-align: center;
+    padding: 5vh 100px;
+}
+
+h1 {
+    font-size: 50px;
+    color:azure;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.section p {
+    flex: 1;
+
+}
+
+.section svg {
+    flex: 2;
+    border: 1px solid white;
+    height: 300px;
+    margin: 25px;
+}
+
+.hey{
+    font-size: 15px;
+    color:azure;
+    padding: 3vh 200px;
+}
+
+@media (max-width: 600px) {
+    .section{
+        flex-direction: column;
+    }
+    .section svg {
+        flex: none;
+    }
+}
+
