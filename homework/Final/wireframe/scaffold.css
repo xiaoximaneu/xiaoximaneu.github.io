@@ -49,9 +49,9 @@ h1 {
 }
 
 .section svg {
-    flex: 2;
+    flex: 3;
     border: 1px solid white;
-    height: 300px;
+    height: 600px;
     margin: 25px;
 }
 
@@ -60,6 +60,13 @@ h1 {
     color:azure;
     padding: 3vh 200px;
 }
+
+.map svg {
+    border: 2px solid white;
+    margin-left: 300px
+
+  }
+
 
 @media (max-width: 600px) {
     .section{

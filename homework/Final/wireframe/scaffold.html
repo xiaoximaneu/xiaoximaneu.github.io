@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./scaffold.css" />
     <!--d3.js-->  
     <script src="https://d3js.org/d3.v7.min.js"></script> 
+    <!--mapping-->
+    <script src="https://unpkg.com/topojson@3"></script>
     <!--Header font-->  
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,13 +40,20 @@
         Of course we will have some questions about them, so let's see if this data can tell us more. </P>
     </div>
 
-    <!--#2 paragraph + graph-->
+    <!--#2 paragraph + map-->
     <div class="section">
-        <svg id="chart2"></svg>
-        <p>🤓 My first question would be: 
+        <p>🤓 So, first of all,
         <br>
         where are they from?</p>
     </div>
+    <div class="map">
+        <svg id="viz">
+            <rect id="ocean" fill="#006994" />
+            <g id="map"></g>
+        </svg>
+              <!--JavaScript files-->
+          <script src="./map1.js"></script>
+              <!--JavaScript files-->
 
     <!--#3 paragraph + graph-->
     <div class="section">
@@ -66,10 +75,7 @@
      <!--JavaScript files-->
      <script src="./loaddata.js"></script>
      <script src="./banner.js"></script>
-     <script src="./chart1.js"></script>
-     <script src="./chart2.js"></script>
-     <script src="./chart3.js"></script>
-     <script src="./chart4.js"></script>
+    
 
     <!--Back to home click-->
      <div class="hey"> <a href="/index.html">back to Home</a> </div>
