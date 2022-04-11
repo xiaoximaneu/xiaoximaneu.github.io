@@ -1,12 +1,22 @@
 body {
     margin: 0;
     background-color: lightblue;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
 }
 
 #banner {
-    position:relative;
+    background-image: url("./headerimg.jpg");
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100px;
+    padding: 32vh 30px;
     text-align: center;
+    font-family: 'Monoton', cursive;
+    font-size: 20px;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+   
 }
 
 .center {
@@ -16,17 +26,17 @@ body {
     transform: translate(-50%, -50%);
   }
   
-  img { 
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-  }
-
 h1 {
-    font-size: 50px;
-    color:azure;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px #000000;
+    color:white;
 }
 
+.section1 {
+    text-align: left;
+    margin-left: 320px;
+    margin-right: 400px;
+}
 .section{
     display: flex;
     flex-direction: row;

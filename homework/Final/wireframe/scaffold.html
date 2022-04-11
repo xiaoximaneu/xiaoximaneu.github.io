@@ -6,31 +6,44 @@
     <!--CSS FILE-->
     <link rel="stylesheet" href="./scaffold.css" />
     <!--d3.js-->  
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script> 
+    <!--Header font-->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <!--article font-->  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <!--Headline, proj intro, byline-->
     <div id="banner">
-        <img src="./headerimg.jpg" alt="header">
-        <h1 class="center">A Glimpse into the World of Top Women Chess Players Worldwide</h1>
-        <P>Project introduction: We will use this 
-            <a href="https://www.kaggle.com/vikasojha98/top-women-chess-players">Top Women Chess Players</a> 
-        dataset to take a look at these amazing female players' world,
-        of course we will have some questions about them, so let's see if the data can tell us more. </P>
-        <p>Created by Xiaoxi Ma</p>
+        <h1>Her World</h1>
+        <p>A Glimpse into the World of Top Women Chess Players Worldwide</p>
     </div>
 
-    <!--#1 paragraph + graph-->
-    <div class="section">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend egestas aliquet. Suspendisse non felis sed felis pellentesque convallis quis eget arcu. Aliquam eget dolor commodo eros rhoncus egestas. Nullam dapibus eget diam nec accumsan. Fusce tincidunt augue a libero semper vulputate. Fusce vel metus sit amet dolor pulvinar varius sit amet vehicula nibh. Sed ultricies interdum tellus, in varius augue eleifend vel.</p>
-        <svg id="chart1"></svg>
+    <!--byline + #1 paragraph-->
+    <div class="section1">
+        <p>Created by Xiaoxi Ma</p>
+        <br>
+        <P> The Queen's Gambit is an American TV miniseries from 2020 that captured everyone's attention at the time.
+            However, after the craze wore off, 
+            I wonder what the real world of the world's top female chess players looked like. 
+            We will try to use this 
+            <a href="https://www.kaggle.com/vikasojha98/top-women-chess-players"> dataset of top women Chess players</a> 
+            and <a href="https://ratings.fide.com/top.phtml?list=women">the up-to-date ranking data of The International Chess Federation(FIDE)</a>
+        to see the world of these amamzing female players.
+        Of course we will have some questions about them, so let's see if this data can tell us more. </P>
     </div>
 
     <!--#2 paragraph + graph-->
     <div class="section">
         <svg id="chart2"></svg>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend egestas aliquet. Suspendisse non felis sed felis pellentesque convallis quis eget arcu. Aliquam eget dolor commodo eros rhoncus egestas. Nullam dapibus eget diam nec accumsan. Fusce tincidunt augue a libero semper vulputate. Fusce vel metus sit amet dolor pulvinar varius sit amet vehicula nibh. Sed ultricies interdum tellus, in varius augue eleifend vel.</p>
+        <p>🤓 My first question would be: 
+        <br>
+        where are they from?</p>
     </div>
 
     <!--#3 paragraph + graph-->
@@ -51,6 +64,7 @@
     </div>
 
      <!--JavaScript files-->
+     <script src="./loaddata.js"></script>
      <script src="./banner.js"></script>
      <script src="./chart1.js"></script>
      <script src="./chart2.js"></script>
