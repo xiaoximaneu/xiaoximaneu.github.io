@@ -57,7 +57,7 @@ d3.json("world-alpha3.json")
 
                     var playerList = "";
                     myCountryData.forEach(function(player) {
-                      playerList = playerList + player.Name + "<br />";
+                      playerList = playerList + player.Name  + "<br />" + " Rank: " +player.Rank + ", Word Rank: " + player.World_Rank + ";<br />" ;
                     });
 
                     var tooltip = d3.select("#tooltip")
