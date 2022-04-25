@@ -44,6 +44,14 @@ h1 {
     padding: 50px;
 }
 
+.note {
+    text-align: left;
+    margin-left: 320px;
+    margin-right: 400px;
+    color: gray;
+    font-size: 16px;
+}
+
 .section p {
     flex: 1;
 
