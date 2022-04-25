@@ -43,6 +43,8 @@ d3.json("world-alpha3.json")
           var countries = map.selectAll("path")
                       .data(geoJSON.features);
 
+
+
           countries.enter().append("path")
                   .attr("d", path)
                   .attr("fill", "white")
