@@ -81,7 +81,7 @@ d3.json("world-alpha3.json")
                       return "#FEE101";
                     }
                     else {
-                      return "white";
+                      return "#848884";
                     }
                   })
                   .on("mouseout", function(){
