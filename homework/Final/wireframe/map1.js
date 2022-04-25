@@ -1,6 +1,7 @@
 var width = 1000;
 var height = 600;
 
+//for map
 var svg = d3.select("#viz")
             .attr("width", width)
             .attr("height", height);
@@ -76,19 +77,22 @@ d3.json("world-alpha3.json")
                     d3.select("#tooltip").style("display", "none");
                   });
 
-                  //var points = [
-                  //    {"name": "Boston", "coords": [-71.0589, 42.3601]},
-                  //    {"name": "London", "coords": [-0.1278, 51.5074]}
-                  //  ];
-                    
-                  //  var dots = map.selectAll("circle")
-                  //    .data(points);
-                    
-                  //  dots.enter().append("circle")
-                  //   .attr("r", 10)
-                  //   .attr("transform", function(d){
-                  //     return "translate(" + proj(d.coords) + ")";
-                  //   });
+
+          var zoom = d3.zoom()
+             .translateExtent(
+                 [
+                     [0,0],
+                     [width, height]
+                 ])
+             .scaleExtent([1, 8])
+             .on("zoom", zoomed);
+
+             function zoomed (event){
+                 map.attr("transform", event.transform);
+             }
+             svg.call(zoom);
+
+            
 
       });
     

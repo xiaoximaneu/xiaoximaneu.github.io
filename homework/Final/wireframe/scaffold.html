@@ -48,8 +48,19 @@
     </div>
     <div class="map">
         <svg id="viz">
+
+            <defs>
+                <linearGradient id="colorGradient">
+                </linearGradient>
+              </defs>
+
             <rect id="ocean" fill="#006994" />
             <g id="map"></g>
+            <g id="scale">
+                <rect id="scaleRect" fill="url(#colorGradient)" />
+                <g id="scaleAxis"></g>
+              </g>
+
         </svg>
               <!--JavaScript files-->
           <script src="./map1.js"></script>
