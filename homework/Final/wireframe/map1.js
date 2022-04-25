@@ -48,7 +48,6 @@ d3.json("world-alpha3.json")
 
           countries.enter().append("path")
                   .attr("d", path)
-                  .attr("fill", "white")
                   .attr("stroke-width", 1)
                   .attr("stroke", "black")
                   .on("mousemove", function(event, d) {
@@ -72,6 +71,18 @@ d3.json("world-alpha3.json")
                    tooltip.select("#players").html(myCountryData.length);
                    tooltip.select("#list").html(playerList);
                     
+                  })
+                  .attr("fill", function(d){
+                    var myCountryData = csvData 
+                    .filter(function(row) {
+                      return row.Country === d.id;
+                    });
+                    if (myCountryData.length){
+                      return "#FEE101";
+                    }
+                    else {
+                      return "white";
+                    }
                   })
                   .on("mouseout", function(){
                     d3.select("#tooltip").style("display", "none");
