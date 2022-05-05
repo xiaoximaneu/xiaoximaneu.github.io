@@ -36,13 +36,9 @@ h1 {
 .section1 {
     text-align: left;
     margin-left: 320px;
-    margin-right: 400px;
+    margin-right: 300px;
 }
-.section{
-    display: flex;
-    flex-direction: row;
-    padding: 50px;
-}
+
 
 .note {
     text-align: left;
@@ -52,17 +48,6 @@ h1 {
     font-size: 16px;
 }
 
-.section p {
-    flex: 1;
-
-}
-
-.section svg {
-    flex: 3;
-    border: 1px solid white;
-    height: 600px;
-    margin: 25px;
-}
 
 .hey{
     font-size: 15px;
