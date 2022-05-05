@@ -12,6 +12,20 @@ svg.select("#ocean")
 
 var map = svg.select("#map");
 
+//for color scale
+var scaleWidth = 800;
+var scaleHeight = 20;
+var scaleX = width/2 - (scaleWidth/2);
+var scaleY = height;
+var scale = svg.select("#scale").attr("transform", "translate(" + scaleX + ", " + scaleY + ")");
+
+svg.select("#scale").attr("transform", "translate(" + scaleX + ", " + scaleY + ")");
+
+scale.select("#scaleRect")
+        .attr("width", scaleWidth)
+        .attr("height", scaleHeight)
+
+
 d3.json("world-alpha3.json")
     .then(function(world) {
 
@@ -104,6 +118,7 @@ d3.json("world-alpha3.json")
                   .on("mouseout", function(){
                     d3.select("#tooltip").style("display", "none");
                   });
+                  
 
 
           var zoom = d3.zoom()
@@ -126,6 +141,8 @@ d3.json("world-alpha3.json")
     
     
 });
+
+
 
 
 
