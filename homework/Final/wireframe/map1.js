@@ -44,7 +44,24 @@ d3.json("world-alpha3.json")
           var countries = map.selectAll("path")
                       .data(geoJSON.features);
 
+          var groupedData = Array.from(
+            d3.group(csvData, function(d) {
+              return d.Country;
+            }), 
+            function(group) {
+              return {
+                country: group[0],
+                count: group[1].length
+              };
+            }
+          );
+          
+          var playerExtent = d3.extent(groupedData, function(d) {
+            return d.count;
+          });
 
+          var colorScale = d3.scaleSequential(d3.interpolatePurples)
+            .domain(playerExtent);
 
           countries.enter().append("path")
                   .attr("d", path)
@@ -60,7 +77,7 @@ d3.json("world-alpha3.json")
                     var playerList = "";
                     myCountryData.forEach(function(player) {
                       playerList = playerList + player.Name  + "<br />" + " Rank: " +player.Rank + ", World Rank: " + player.World_Rank + ";<br />" ;
-                    });
+                    }); 
 
                     var tooltip = d3.select("#tooltip")
                       .style("display", "block")
@@ -78,7 +95,7 @@ d3.json("world-alpha3.json")
                       return row.Country === d.id;
                     });
                     if (myCountryData.length){
-                      return "#FEE101";
+                      return colorScale(myCountryData.length);
                     }
                     else {
                       return "#848884";
