@@ -1,4 +1,4 @@
-var width = window.innerWidth - 620;
+var width = window.innerWidth * 0.6;
 var height = 600;
 
 //for map
