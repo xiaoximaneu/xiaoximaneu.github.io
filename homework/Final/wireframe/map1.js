@@ -64,6 +64,7 @@ d3.json("world-alpha3.json")
 
           var colorScale = d3.scaleSequential(d3.interpolatePurples)
             .domain(playerExtent);
+    
 
           countries.enter().append("path")
                   .attr("d", path)
@@ -106,8 +107,6 @@ d3.json("world-alpha3.json")
                   .on("mouseout", function(){
                     d3.select("#tooltip").style("display", "none");
                   });
-                  
-
 
           var zoom = d3.zoom()
              .translateExtent(
