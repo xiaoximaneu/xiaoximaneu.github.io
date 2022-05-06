@@ -3,6 +3,7 @@ body {
     background-color: lightblue;
     font-family: 'Chakra Petch', sans-serif;
     font-size: 20px;
+    overflow-x: hidden;
 }
 
 #banner {
