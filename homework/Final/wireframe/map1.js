@@ -1,4 +1,4 @@
-var width = 1000;
+var width = window.innerWidth - 620;
 var height = 600;
 
 //for map
@@ -12,18 +12,6 @@ svg.select("#ocean")
 
 var map = svg.select("#map");
 
-//for color scale
-var scaleWidth = 800;
-var scaleHeight = 20;
-var scaleX = width/2 - (scaleWidth/2);
-var scaleY = height;
-var scale = svg.select("#scale").attr("transform", "translate(" + scaleX + ", " + scaleY + ")");
-
-svg.select("#scale").attr("transform", "translate(" + scaleX + ", " + scaleY + ")");
-
-scale.select("#scaleRect")
-        .attr("width", scaleWidth)
-        .attr("height", scaleHeight)
 
 
 d3.json("world-alpha3.json")
