@@ -15,9 +15,19 @@ body {
   h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    color:azure;
+    color:black;
     text-align: right;
     margin-top: 100px;
+   
+  }
+
+  h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+    margin-left: 50%;
+    
   }
 
   .right{
