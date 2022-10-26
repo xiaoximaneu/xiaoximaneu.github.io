@@ -37,7 +37,55 @@ body {
       flex: none;
     }
   }
+
+  .container {
+    max-width: 800px;
+  }
+
+  @media (max-width:550px){
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:551px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:960px){
+    .container {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
   
+@media (max-width:550px) {
+  .container p{
+  color: black;
+  font-size: 15px;
+  line-height: 1.7em;
+  }
+}
+
+@media (min-width:551px) {
+  .container p {
+  color: black;
+  font-size: 18px;
+  line-height: 2.3;
+  }
+}
+
+.container a{
+  color: darkblue;
+  text-decoration: none;
+  background-color: yellow;
+  display: inline-block;
+}
+
   #tooltip {
     background-color: #eeeeee;
     border: 1px solid black;
