@@ -86,6 +86,10 @@ body {
   display: inline-block;
 }
 
+mark {
+  background-color: yellow;
+}
+
   #tooltip {
     background-color: #eeeeee;
     border: 1px solid black;
