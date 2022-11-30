@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D3 Projections</title>
+<style>
+body {
+    background-color: #ccc;
+    font-family: sans-serif;
+}
+svg {
+    border: 1px dotted black;
+}
+</style>
+</head>
+<body>
+
+<p>Uncomment lines 37 to 48 to view various projections.</p>    
+<p>See documentation here: <a href="https://github.com/d3/d3-geo">https://github.com/d3/d3-geo</a></p>
+<div id="plot"></div>
+<script src="/mapping/d3.min.js"></script>
+<script>
+
+const w = 1200,
+      h = 600;
+
+// set up svg
+const rootDom = d3.select("#plot");
+const plot = rootDom.append("svg")
+    .attr("width",w)
+	.attr("height",h);
+
+// configure projection function
+// ----------------------------------------------
+//const projection = d3.geoOrthographic()
+const projection = d3.geoMercator()
+// const projection = d3.geoAzimuthalEqualArea()
+// const projection = d3.geoAzimuthalEquidistant()
+// const projection = d3.geoStereographic()
+// const projection = d3.geoEqualEarth()
+// const projection = d3.geoConicConformal()
+// const projection = d3.geoConicEqualArea()
+// const projection = d3.geoConicEquidistant()
+// const projection = d3.geoEquirectangular()
+// const projection = d3.geoTransverseMercator()
+// const projection = d3.geoNaturalEarth1()
+	.translate([w/2, h/2])
+	.scale(100)
+	.center([0,0]);      
+
+// configure path generator
+const path = d3.geoPath().projection(projection);
+
+// configure graticules
+const graticule = d3.geoGraticule();
+
+// load datafiles via promise
+const promises = [
+    d3.json("data/world.geojson"),
+    d3.csv("data/cities.csv", (d) => {
+        return {
+            city: d.City,
+            pop: d.Population,
+            lon: d.Longitude,
+            lat: d. Lattitude,
+            name: d.Name
+	    }    
+    })
+];
+
+
+// load data
+Promise.all(promises).then(([worldmap, cities]) => {
+
+    // draw land
+    plot.selectAll(".land")
+        .data(worldmap.features)
+        .join(
+            (enter) => enter.append("path").attr("class","land")
+        )
+        .attr("d", path)
+        .attr("fill","#fff")
+        .attr("stroke","#ccc");
+
+    // draw graticules
+    plot.selectAll(".graticule")
+        .data([graticule()])
+        .join(
+            (enter) => enter.append('path').attr("class","graticule")
+        )
+        .attr('d', path)
+        .attr("fill","none")
+        .attr("stroke","#fff")
+        .attr("opacity","0.4");
+});
+</script>
+</body>
+</html>
