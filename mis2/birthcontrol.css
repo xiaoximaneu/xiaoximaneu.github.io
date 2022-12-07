@@ -4,11 +4,11 @@ body {
     padding: 0;
   }
   
-.header {
-  text-align: center;
-  font-weight: 200;
-  padding: 20vh 25px;
-}
+  .header {
+    text-align: center;
+    padding: 20vh 25px;
+    font-weight:300;
+  }
 
 .header h1 {
   font-size: 60px;
