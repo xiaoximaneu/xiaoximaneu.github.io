@@ -3,89 +3,87 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 805 600" style="enable-background:new 0 0 805 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{fill:none;stroke:#CCCCCC;}
-	.st2{font-family:'ArialMT';}
-	.st3{font-size:10px;}
+	.st0{fill:none;stroke:#CCCCCC;}
+	.st1{font-family:'ArialMT';}
+	.st2{font-size:10px;}
+	.st3{font-size:15px;}
 	.st4{fill:#F5A623;}
 	.st5{font-family:'Arial-BoldMT';}
-	.st6{font-size:15px;}
 </style>
-<rect id="backgorund" class="st0" width="805" height="600"/>
-<path class="st1" d="M10,415.4c107.5,0,107.5-137.6,215-137.6"/>
-<path class="st1" d="M10,415.4c107.5,0,107.5,137.6,215,137.6"/>
-<path class="st1" d="M225,277.8c107.5,0,107.5-212.2,215-212.2"/>
-<path class="st1" d="M225,277.8c107.5,0,107.5-21,215-21"/>
-<path class="st1" d="M225,277.8c107.5,0,107.5,154.9,215,154.9"/>
-<path class="st1" d="M225,277.8c107.5,0,107.5,212.2,215,212.2"/>
-<path class="st1" d="M225,553c107.5,0,107.5,0,215,0"/>
-<path class="st1" d="M440,65.6c107.5,0,107.5-37.8,215-37.8"/>
-<path class="st1" d="M440,65.6c107.5,0,107.5,0,215,0"/>
-<path class="st1" d="M440,65.6c107.5,0,107.5,37.8,215,37.8"/>
-<path class="st1" d="M440,256.8c107.5,0,107.5-116.5,215-116.5"/>
-<path class="st1" d="M440,256.8c107.5,0,107.5-78,215-78"/>
-<path class="st1" d="M440,256.8c107.5,0,107.5-37.2,215-37.2"/>
-<path class="st1" d="M440,256.8c107.5,0,107.5,2.7,215,2.7"/>
-<path class="st1" d="M440,256.8c107.5,0,107.5,41.5,215,41.5"/>
-<path class="st1" d="M440,256.8c107.5,0,107.5,78.8,215,78.8"/>
-<path class="st1" d="M440,256.8c107.5,0,107.5,116.5,215,116.5"/>
-<path class="st1" d="M440,432.7c107.5,0,107.5-18.7,215-18.7"/>
-<path class="st1" d="M440,432.7c107.5,0,107.5,18.7,215,18.7"/>
-<path class="st1" d="M440,490c107.5,0,107.5,0,215,0"/>
-<path class="st1" d="M440,553c107.5,0,107.5-19.2,215-19.2"/>
-<path class="st1" d="M440,553c107.5,0,107.5,19.2,215,19.2"/>
-<text transform="matrix(1 0 0 1 140.8525 272.2994)" class="st2 st3">Combination pills</text>
-<text transform="matrix(1 0 0 1 133.0742 547.426)" class="st2 st3">Progestin-only pills</text>
-<text transform="matrix(1 0 0 1 330.6279 60.0918)" class="st2 st3">Ethinyl estradiol, 20 μg</text>
-<text transform="matrix(1 0 0 1 316.1748 251.2935)" class="st2 st3">Ethinyl estradiol, 30-40 μg</text>
-<text transform="matrix(1 0 0 1 330.6279 427.1639)" class="st2 st3">Ethinyl estradiol, 50 μg</text>
-<text transform="matrix(1 0 0 1 358.0693 484.4026)" class="st2 st3">Natural estrogen</text>
-<text transform="matrix(1 0 0 1 418.1084 547.4783)" class="st2 st3">NA</text>
-<circle class="st4" cx="655" cy="27.8" r="6.1"/>
-<text transform="matrix(1 0 0 1 663.1237 16.3203)" class="st5 st3">Desogestrel </text>
-<text transform="matrix(1 0 0 1 663.1237 28.3203)" class="st2 st3">60%</text>
-<circle class="st4" cx="655" cy="65.6" r="6.6"/>
-<text transform="matrix(1 0 0 1 663.6144 54.144)" class="st5 st3">Drospirenone</text>
-<text transform="matrix(1 0 0 1 663.6144 66.144)" class="st2 st3">70%</text>
-<circle class="st4" cx="655" cy="103.5" r="6.1"/>
-<text transform="matrix(1 0 0 1 663.1237 91.9678)" class="st5 st3">Gestodene</text>
-<text transform="matrix(1 0 0 1 663.1237 103.9678)" class="st2 st3">60%</text>
-<circle class="st4" cx="655" cy="140.3" r="5.6"/>
-<text transform="matrix(1 0 0 1 662.5901 128.8127)" class="st5 st3">Cyproterone acetate</text>
-<text transform="matrix(1 0 0 1 662.5901 140.8127)" class="st2 st3">50%</text>
-<circle class="st4" cx="655" cy="178.9" r="7.9"/>
-<text transform="matrix(1 0 0 1 664.9057 167.3608)" class="st5 st3">Desogestrel </text>
-<text transform="matrix(1 0 0 1 664.9057 179.3608)" class="st2 st3">100%</text>
-<circle class="st4" cx="655" cy="219.6" r="7.9"/>
-<text transform="matrix(1 0 0 1 664.9057 208.1219)" class="st5 st3">Drospirenone</text>
-<text transform="matrix(1 0 0 1 664.9057 220.1219)" class="st2 st3">100%</text>
-<circle class="st4" cx="655" cy="259.6" r="7.1"/>
-<text transform="matrix(1 0 0 1 664.071 248.0854)" class="st5 st3">Gestodene </text>
-<text transform="matrix(1 0 0 1 664.071 260.0854)" class="st2 st3">80%</text>
-<circle class="st4" cx="655" cy="298.3" r="6.6"/>
-<text transform="matrix(1 0 0 1 663.6144 286.8146)" class="st5 st3">Levonorgestrel </text>
-<text transform="matrix(1 0 0 1 663.6144 298.8146)" class="st2 st3">70%</text>
-<circle class="st4" cx="655" cy="335.6" r="5.6"/>
-<text transform="matrix(1 0 0 1 662.5901 324.1284)" class="st5 st3">Norethisterone </text>
-<text transform="matrix(1 0 0 1 662.5901 336.1284)" class="st2 st3">50%</text>
-<circle class="st4" cx="655" cy="373.4" r="7.1"/>
-<text transform="matrix(1 0 0 1 664.071 361.8788)" class="st5 st3">Norgestimate </text>
-<text transform="matrix(1 0 0 1 664.071 373.8788)" class="st2 st3">80%</text>
-<circle class="st4" cx="655" cy="414.1" r="8.7"/>
-<text transform="matrix(1 0 0 1 665.6603 402.5634)" class="st5 st3">Levonorgestrel</text>
-<text transform="matrix(1 0 0 1 665.6603 414.5634)" class="st2 st3">120%</text>
-<circle class="st4" cx="655" cy="451.4" r="3.5"/>
-<text transform="matrix(1 0 0 1 660.5355 439.8688)" class="st5 st3">Norethisterone</text>
-<text transform="matrix(1 0 0 1 660.5355 451.8688)" class="st2 st3">20%</text>
-<circle class="st4" cx="655" cy="490" r="10"/>
-<text transform="matrix(1 0 0 1 667 478.4548)" class="st5 st3">Dienogest</text>
-<text transform="matrix(1 0 0 1 667 490.4548)" class="st2 st3">160%</text>
-<circle class="st4" cx="655" cy="533.8" r="9"/>
-<text transform="matrix(1 0 0 1 666.0139 522.2769)" class="st5 st3">Desogestrel </text>
-<text transform="matrix(1 0 0 1 666.0139 534.2769)" class="st2 st3">130%</text>
-<circle class="st4" cx="655" cy="572.2" r="4.3"/>
-<text transform="matrix(1 0 0 1 661.3301 560.6797)" class="st5 st3">Norethisterone</text>
-<text transform="matrix(1 0 0 1 661.3301 572.6797)" class="st2 st3">30%</text>
-<text transform="matrix(1 0 0 1 10.1752 23.0005)" class="st2 st6">Size of orange dots indicates increased risk (%) of first diagnosis of depression </text>
-<text transform="matrix(1 0 0 1 10.1752 41.0005)" class="st2 st6">among adolescents </text>
+<path class="st0" d="M10,415.4c107.5,0,107.5-137.6,215-137.6"/>
+<path class="st0" d="M10,415.4c107.5,0,107.5,137.6,215,137.6"/>
+<path class="st0" d="M225,277.8c107.5,0,107.5-212.2,215-212.2"/>
+<path class="st0" d="M225,277.8c107.5,0,107.5-21,215-21"/>
+<path class="st0" d="M225,277.8c107.5,0,107.5,154.9,215,154.9"/>
+<path class="st0" d="M225,277.8c107.5,0,107.5,212.2,215,212.2"/>
+<path class="st0" d="M225,553c107.5,0,107.5,0,215,0"/>
+<path class="st0" d="M440,65.6c107.5,0,107.5-37.8,215-37.8"/>
+<path class="st0" d="M440,65.6c107.5,0,107.5,0,215,0"/>
+<path class="st0" d="M440,65.6c107.5,0,107.5,37.8,215,37.8"/>
+<path class="st0" d="M440,256.8c107.5,0,107.5-116.5,215-116.5"/>
+<path class="st0" d="M440,256.8c107.5,0,107.5-78,215-78"/>
+<path class="st0" d="M440,256.8c107.5,0,107.5-37.2,215-37.2"/>
+<path class="st0" d="M440,256.8c107.5,0,107.5,2.7,215,2.7"/>
+<path class="st0" d="M440,256.8c107.5,0,107.5,41.5,215,41.5"/>
+<path class="st0" d="M440,256.8c107.5,0,107.5,78.8,215,78.8"/>
+<path class="st0" d="M440,256.8c107.5,0,107.5,116.5,215,116.5"/>
+<path class="st0" d="M440,432.7c107.5,0,107.5-18.7,215-18.7"/>
+<path class="st0" d="M440,432.7c107.5,0,107.5,18.7,215,18.7"/>
+<path class="st0" d="M440,490c107.5,0,107.5,0,215,0"/>
+<path class="st0" d="M440,553c107.5,0,107.5-19.2,215-19.2"/>
+<path class="st0" d="M440,553c107.5,0,107.5,19.2,215,19.2"/>
+<text transform="matrix(1 0 0 1 140.8525 272.2994)" class="st1 st2">Combination pills</text>
+<text transform="matrix(1 0 0 1 133.0742 547.426)" class="st1 st2">Progestin-only pills</text>
+<text transform="matrix(1 0 0 1 330.6279 60.0918)" class="st1 st2">Ethinyl estradiol, 20 μg</text>
+<text transform="matrix(1 0 0 1 316.1748 251.2935)" class="st1 st2">Ethinyl estradiol, 30-40 μg</text>
+<text transform="matrix(1 0 0 1 330.6279 427.1639)" class="st1 st2">Ethinyl estradiol, 50 μg</text>
+<text transform="matrix(1 0 0 1 358.0693 484.4026)" class="st1 st2">Natural estrogen</text>
+<text transform="matrix(1 0 0 1 418.1084 547.4783)" class="st1 st2">NA</text>
+<text transform="matrix(1 0 0 1 10.1752 23.0005)" class="st1 st3">Size of orange dots indicates increased risk (%) of first diagnosis of depression </text>
+<text transform="matrix(1 0 0 1 10.1752 41.0005)" class="st1 st3">among adolescents </text>
+<circle class="st4" cx="658.8" cy="27.6" r="12.6"/>
+<circle class="st4" cx="661.6" cy="68.4" r="14.4"/>
+<circle class="st4" cx="659.9" cy="103.7" r="12.6"/>
+<circle class="st4" cx="656" cy="301" r="14.4"/>
+<circle class="st4" cx="656.2" cy="141.8" r="10.8"/>
+<circle class="st4" cx="658.8" cy="181.4" r="19.8"/>
+<circle class="st4" cx="659.8" cy="224.1" r="19.8"/>
+<circle class="st4" cx="661.6" cy="265.4" r="16.2"/>
+<circle class="st4" cx="656" cy="337.6" r="10.8"/>
+<circle class="st4" cx="660.7" cy="375.2" r="16.2"/>
+<circle class="st4" cx="665.4" cy="419.7" r="23.4"/>
+<circle class="st4" cx="654.8" cy="453.4" r="5.4"/>
+<circle class="st4" cx="667.2" cy="494.4" r="30.6"/>
+<circle class="st4" cx="633.4" cy="542.7" r="25.2"/>
+<circle class="st4" cx="656.3" cy="573.1" r="7.2"/>
+<text transform="matrix(1 0 0 1 678.7175 30.3205)" class="st5 st2">Desogestrel </text>
+<text transform="matrix(1 0 0 1 649.9176 31.3087)" class="st1 st2">60%</text>
+<text transform="matrix(1 0 0 1 682.5964 69.8383)" class="st5 st2">Drospirenone</text>
+<text transform="matrix(1 0 0 1 652.1024 71.6736)" class="st1 st2">70%</text>
+<text transform="matrix(1 0 0 1 681.2587 104.2738)" class="st5 st2">Gestodene</text>
+<text transform="matrix(1 0 0 1 651.6117 106.9562)" class="st1 st2">60%</text>
+<text transform="matrix(1 0 0 1 677.3369 145.354)" class="st5 st2">Cyproterone acetate</text>
+<text transform="matrix(1 0 0 1 648.5369 144.6482)" class="st1 st2">50%</text>
+<text transform="matrix(1 0 0 1 684.7348 181.361)" class="st5 st2">Desogestrel </text>
+<text transform="matrix(1 0 0 1 646.6172 185.7374)" class="st1 st2">100%</text>
+<text transform="matrix(1 0 0 1 684.7348 225.5103)" class="st5 st2">Drospirenone</text>
+<text transform="matrix(1 0 0 1 647.4642 229.0397)" class="st1 st2">100%</text>
+<text transform="matrix(1 0 0 1 684.7471 267.1679)" class="st5 st2">Gestodene </text>
+<text transform="matrix(1 0 0 1 653.406 269.0032)" class="st1 st2">80%</text>
+<text transform="matrix(1 0 0 1 685.1376 303.3559)" class="st5 st2">Levonorgestrel </text>
+<text transform="matrix(1 0 0 1 648.7141 304.3442)" class="st1 st2">70%</text>
+<text transform="matrix(1 0 0 1 684.9603 338.9756)" class="st5 st2">Norethisterone </text>
+<text transform="matrix(1 0 0 1 647.6898 341.658)" class="st1 st2">50%</text>
+<text transform="matrix(1 0 0 1 685.5942 376.726)" class="st5 st2">Norgestimate </text>
+<text transform="matrix(1 0 0 1 652.559 380.2555)" class="st1 st2">80%</text>
+<text transform="matrix(1 0 0 1 693.1129 419.9518)" class="st5 st2">Levonorgestrel</text>
+<text transform="matrix(1 0 0 1 654.9953 422.6342)" class="st1 st2">120%</text>
+<text transform="matrix(1 0 0 1 670.2 457.2572)" class="st5 st2">Norethisterone</text>
+<text transform="matrix(1 0 0 1 649.0235 456.5513)" class="st1 st2">20%</text>
+<text transform="matrix(1 0 0 1 700.382 498.3844)" class="st5 st2">Dienogest</text>
+<text transform="matrix(1 0 0 1 658.8762 495.9844)" class="st1 st2">160%</text>
+<text transform="matrix(1 0 0 1 665.5136 547.2888)" class="st5 st2">Desogestrel </text>
+<text transform="matrix(1 0 0 1 621.4667 545.7359)" class="st1 st2">130%</text>
+<text transform="matrix(1 0 0 1 675.2298 575.5269)" class="st5 st2">Norethisterone</text>
+<text transform="matrix(1 0 0 1 649.8181 575.6681)" class="st1 st2">30%</text>
 </svg>
